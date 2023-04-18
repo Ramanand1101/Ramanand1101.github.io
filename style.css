@@ -1,0 +1,566 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root {
+    --main-color:#ec4872 ;
+    --body-color:
+    #353c49;
+    --bg-color:white;
+    --text-color: white;
+    --heading-color:#e3e4e8;
+    --project-color:#3f4654;
+    --hover: hsl(260, 100%, 51%);
+    --big-font: 3.2rem;
+    --medium-font: 1.8rem;
+    --p-font: 0.941rem;
+  }
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    width: 100%;
+    background-color: #21242c;
+}
+
+li {
+    list-style: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(4px);
+}
+
+/* ------------------------------ Navbar section starts here------------------------ */
+#nav-menu {
+    background-color:var(--text-color) ;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+
+#nav-cont {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hamb {
+    display: none;
+}
+
+#nav-name {
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#nav-name>a {
+    color:var(--body-color);
+}
+
+#navbar-menu {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#navbar-menu a {
+    color:var(--body-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#nav-menu li {
+    transition: transform .2s;
+}
+
+#nav-menu li:hover {
+    transform: scale(1.3);
+}
+
+#resume-button-1 {
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: transform .2s;
+}
+
+#resume-button-1:hover {
+    transform: scale(1.1);
+}
+
+#resume-link-1 {
+    color:var(--text-color);
+}
+/* ------------------------------ Navbar section ends here------------------------ */
+
+/* ------------------------------ Home section starts here------------------------ */
+#home {
+    padding: 200px 0;
+}
+
+.home-body {
+    width: 87%;
+    margin: auto;
+    display: flex;
+}
+
+.home-left {
+    width: 50%;
+    color: var(--text-color);
+    padding-left: 10%;
+    padding-top: 7%;
+}
+.home-left>h2{
+    font-size: 45px;;
+}
+
+.home-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-right>img {
+    width: 100%;
+}
+
+#resume-button-2 {
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    padding: 7px 14px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: transform .2s;
+}
+
+#resume-button-2:hover {
+    transform: scale(1.1);
+}
+
+#resume-link-2 {
+    color:var(--text-color);
+}
+
+/* ------------------------------ Home section ends here------------------------ */
+
+/* ------------------------------ About section starts here------------------------ */
+#about {
+    padding: 95px 0;
+    
+}
+
+#about>h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--heading-color);
+}
+
+.about-body {
+    background-color:var(--body-color);
+    color:var(--text-color);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    transition: transform .2s;
+}
+
+.about-body:hover {
+    transform: scale(1.02);
+}
+
+.about-left {
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.img-div {
+    width: 100%;
+}
+
+.img-div>img {
+    border: 2px solid #daa954;
+    background-color:white;
+    max-width: 350px;
+    height: auto;
+    width: 80%;
+    border-radius: 10%;
+    align-items: end;
+}
+
+.about-details {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-details>h4 {
+    line-height: 30px;
+}
+
+#user-detail-intro {
+    text-align: justify;
+}
+
+/* ------------------------------ About section ends here------------------------ */
+
+/* ------------------------------ Skills section starts here------------------------ */
+#skills {
+    padding: 95px 0;
+    color: var(--heading-color);
+}
+
+#skills>h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.skills-body {
+    width: 80%;
+    padding: 30px 0;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 30px;
+}
+
+.skills-card {
+    background-color: var(--bg-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color:var(--body-color);
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.skills-card:hover {
+    transform: scale(1.1);
+}
+
+.skills-card>h3 {
+    margin: 7px auto;
+}
+/* ------------------------------ Skills section ends here------------------------ */
+
+/* ----------------------------- Projects section starts here---------------------- */
+
+#projects {
+    color: var(--heading-color);
+    padding: 95px 0;
+}
+
+#projects>h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.projects-body {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px 20px;
+}
+
+.project-card {
+    border-radius: 15px;
+    margin: 10px auto;
+    padding: 25px;
+    background-color:var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-img {
+    width: 49%;
+    height: 270px;
+    background-color: var(--project-color);
+    border-radius: 7px;
+    transition: transform .2s;
+}
+
+.project-img:hover {
+    transform: scale(1.02);
+}
+
+.project-img>img {
+    border: 5px solid var(--main-color);
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+}
+
+.project-info {
+    width: 49%;
+    border: 3px solid var(--main-color);
+    border-radius: 10px;
+    background-color: var(--project-color);
+    padding: 5px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.project-info>h3 {
+    text-transform: uppercase;
+}
+
+.project-info>p {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.project-tech-stack {
+    width: 95%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-tech-stack>div>img {
+    width: 100%;
+    height: 55px;
+}
+
+.project-buttons {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-buttons>a {
+    transition: transform .2s;
+}
+
+.project-buttons>a:hover {
+    transform: scale(1.1);
+}
+
+.project-github-link {
+    font-size: 45px;
+    color: black;
+}
+
+.project-deployed-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-deployed-link>button {
+    background-color: var(--main-color);
+    border: none;
+    color:var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+/* ----------------------------- Projects section ends here---------------------- */
+
+/* ----------------------------- Contact section starts here---------------------- */
+#contact {
+    padding: 95px 0;
+    color: var(--heading-color);
+}
+
+#contact>h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-body {
+    width: 70%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-text {
+    background-color:var(--body-color);
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.contact-text>div {
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+.contact-text>div>* {
+    margin: 10px 0;
+    color: var(--bg-color);
+    transition: transform .2s;
+}
+
+.contact-text>div>*:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#contact-img {
+    width: 45%;
+}
+
+#contact-img>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.contact-left form {
+    width: 80%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color:var(--body-color);
+    padding: 10px;
+    margin: 10px 0;
+    color: var(--body-color);
+    font-size: 18px;
+    border-radius: 6px;
+    
+}
+
+form textarea {
+    height: 90px;
+}
+
+form .btn2 {
+    padding: 5px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-style: none;
+    background-color: var(--main-color);
+    color:var(--text-color);
+    transition: transform .2s;
+    
+
+}
+
+form .btn2:hover {
+    transform: scale(1.1);
+}
+
+/* ----------------------------- Contact section ends here---------------------- */
+
+/* ----------------------------- GitHib section starts here---------------------- */
+#github {
+    padding: 95px 0;
+    color: var(--heading-color);
+}
+
+#github>h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#github-stats {
+    width: 85%;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#github-stats>div {
+    width: 32%;
+}
+
+#github-stats>div>img {
+    width: 100%;
+    height: 100%;
+}
+
+.react-activity-calendar {
+    margin: 20px auto;
+    width: 85%;
+}
+
+.calendar {
+    width: 100%;
+    margin: auto;
+    background-color:var(--bg-color);
+    padding: 20px;
+    color:var(--text-color);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.calendar span {
+    color:var(--text-color);
+}
+/* ----------------------------- GitHub section ends here---------------------- */
+
+/* ----------------------------- Footer section starts here---------------------- */
+#signature {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color:var(--bg-color);
+    color:var(--body-color);
+    font-weight: 700;
+}
+
+/* ----------------------------- Footer section ends here---------------------- */
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color:red;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:var(--bg-color);
+    border: 3px solid var(--body-color);
+}
+
+
