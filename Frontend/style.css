@@ -7,8 +7,7 @@
 }
 :root {
     --main-color:#ec4872 ;
-    --body-color:
-    #353c49;
+    --body-color:#353c49;
     --bg-color:white;
     --text-color: white;
     --heading-color:#e3e4e8;
@@ -422,7 +421,7 @@ button:active {
     height: 80%;
     flex-direction: column;
     margin-top: 10px;
-    font-size: 19px;
+    font-size: 25px;
 }
 
 .contact-text>div>* {
@@ -458,8 +457,8 @@ form textarea {
     background-color:var(--body-color);
     padding: 10px;
     margin: 10px 0;
-    color: var(--body-color);
-    font-size: 18px;
+    color: var(--heading-color);
+    font-size: 25px;
     border-radius: 6px;
     
 }
@@ -532,7 +531,7 @@ form .btn2:hover {
 }
 
 .calendar span {
-    color:var(--text-color);
+    color:var(--body-color);
 }
 /* ----------------------------- GitHub section ends here---------------------- */
 
@@ -542,7 +541,7 @@ form .btn2:hover {
     padding: 10px 0;
     text-align: center;
     background-color:var(--bg-color);
-    color:var(--body-color);
+    color:var(--main-color);
     font-weight: 700;
 }
 
@@ -559,8 +558,8 @@ form .btn2:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color:var(--bg-color);
-    border: 3px solid var(--body-color);
+    background-color:var(--main-color);
+    border: 3px solid var(--heading-color);
 }
 
 
